@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymyleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/app.css}"/>
+</head>
+<body>
+
+
+
+<h1> REJESTRACJA <p></p></h1>
+
+
+
+<form action="#" th:action="@{/register}" th:object="${user}" method="POST">
+    Login:<input type="text" name="name" th:field="*{username}"/><br/>
+    Hasło:<input type="password" name="password" th:filed="*{password}"/><br/>
+    <input type="submit" value="Wyślij"></input>
+</form>
+
+</body>
+</html>
